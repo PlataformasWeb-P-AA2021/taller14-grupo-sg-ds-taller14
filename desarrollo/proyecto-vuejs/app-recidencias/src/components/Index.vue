@@ -13,9 +13,8 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        <div class="card-body">
-                            <p class="card-text">Número de Cuartos: {{ departamento.numCuartos }}</p>
-                            <p class="card-text">Edificio: {{ departamento.edifcio }}</p>
+                         <div class="card-body">
+                            <span class="card-text"><b>Edificio:</b> {{ departamento.edificio_str }}</span>
                         </div>
                     </div>
                 </div>

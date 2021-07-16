@@ -24,6 +24,7 @@ class EdificioSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class DepartamentoSerializer(serializers.HyperlinkedModelSerializer):
+    edificio_str = serializers.StringRelatedField(source="edificio.nombre", read_only=True)
     id = serializers.IntegerField(read_only=True)
     class Meta:
         model = Departamento
